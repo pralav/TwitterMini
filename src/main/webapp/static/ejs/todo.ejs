@@ -1,0 +1,9 @@
+<li id="todoItem<%=tweetid%>">
+  <span id="itemName<%=name%>"><%=tweets%></span> |
+  <a class="todoDelete" href="javascript: void(0);">delete</a> |
+  <form class="todoUpdate" style="display:inline;" action="/todo/update" onsubmit="; return false;">
+    <input type="hidden" name="id" value="<%=tweetid%>"/>
+    <input id="updateItemName<%=tweetid%>" type="text" name="name" value="<%=tweets%>"/>
+    <input type="submit" value="Save Changes"/>
+  </form>
+</li>
